@@ -89,7 +89,36 @@ body{
     width: 100%;
 }
 .text-1, .text-2{
-    background-color: lightgreen;
+    font-size: 20px;
+}
+.text-1:focus, .text-2:focus{
+    background-color: rgb(93, 190, 255);
     color: black;
+    border-radius: 2px;
     
 }
+input[type="radio"]{
+    transform: scale(2);
+    display: inline-block;
+    position: relative; left: 10px;
+}
+label[class*="lb-1"]{
+    font-family: Helvetica;
+    font-size: 20px;
+
+}
+label[class="lb-2"]{
+    font-family: Helvetica;
+    font-size: 20px;
+    position: relative; left: 10px;     /*radio-label*/
+    display: inline-block;
+}
+.radio-box{
+    position: relative;
+    padding-top: 15px; padding-bottom: 15px;
+    width: 100%;
+    background-color: rgb(255, 164, 45);
+
+}
+
+
