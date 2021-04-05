@@ -22,20 +22,30 @@
 <div class="content-box-2">
 <h2 id="h-2">Fill up the input boxes below and choose the appropiate settings and then press "Submit"</h2>
 <hr>
+<div class="text-box">
 <label class="lb-1">INPUTS: </label>
-<input maxlength="30px" size="30px" placeholder="Input 1" name="input" title="Input the numbers here" type="text" class="text-1">
-<input maxlength="30px" size="30px" placeholder="Input 2" name="input2" title="Input the numbers here" type="text" class="text-2">
+<input placeholder="Input 1" name="input" title="Input the numbers here" type="text" class="text-1">
+<input placeholder="Input 2" name="input2" title="Input the numbers here" type="text" class="text-2">
+</div>
 <div class="radio-box">
-<input type="radio" name="rd-button" class="rd-1" value="rec">
+<input onclick="clickRadio()" type="radio" name="rd-button" class="rd-1" value="rec">
 <label for="rd-1" class="lb-2">Rectangle Area</label>
-<input type="radio" name="rd-button" class="rd-2" value="tri">
+<input onclick="clickRadio()" type="radio" name="rd-button" class="rd-2" value="tri">
 <label class="lb-2" for="rd-2">Triangle Area</label>
+<input onclick="submitButton()" type="button" value="Submit" name="submit-button" class="submit-1" placeholder="Submit">
+<input onclick="clickClearRec()" type="button" value="Clear" name="clear-button" class="submit-1" placeholder="Clear">
+</div>
+<div class="output-box">
+<output class="output-calc">Output: </output>
 </div>
 </div>
-
+<div class="footer-box">
+<h2 class="h-f"><strong>---- Copyright Big Brain ----</strong></h2>
 </div>
 
 
+
+<script type="text/javascript" src="main.js"></script>
 </body>
 
 
