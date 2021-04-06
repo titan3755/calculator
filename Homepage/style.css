@@ -88,24 +88,25 @@ body{
     display: inline-block;
     width: 100%;
 }
-.text-1, .text-2{
+.text-1, .text-2, .text-3{
     font-size: 20px;
     transition: all 300ms ease-in-out;
     display: inline-block;
 }
-.text-1:focus-within, .text-2:focus-within{
+.text-1:focus-within, .text-2:focus-within, .text-3:focus-within{
     background-color: rgb(93, 190, 255);
     color: black;
     border-radius: 5px;
     outline: none;
-    
-
-    
+}
+.text-3{
+    display: none;
 }
 input[type="radio"]{
     transform: scale(2);
     display: inline-block;
-    position: relative; left: 10px;
+    /* position: relative; left: 10px; */
+    
 }
 label[class*="lb-1"]{
     font-family: Helvetica;
@@ -115,7 +116,7 @@ label[class*="lb-1"]{
 label[class="lb-2"]{
     font-family: Helvetica;
     font-size: 20px;
-    position: relative; left: 10px;     /*radio-label*/
+    /* position: relative; left: 10px;     radio-label */
     display: inline-block;
 }
 .radio-box{
@@ -126,7 +127,9 @@ label[class="lb-2"]{
 
 }
 input[class="submit-1"]{
-    position: relative; left: 700px;
+    /* position: relative;  */
+    float: right;
+    margin: 10px;
     background-color: rgb(42, 212, 119);
     padding: 10px;
     transition-duration: 500ms;
@@ -175,4 +178,9 @@ input[class="submit-1"]:focus:hover{
     padding-left: 10px; padding-right: 10px;
     color: white;
 }
-
+.radio-1, .radio-2, .radio-3, .radio-4{
+    display: inline-block;
+    padding: 10px;
+    padding-right: 15px;
+    border: 5px double rgb(255, 54, 54);
+}
